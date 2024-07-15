@@ -1,0 +1,37 @@
+GET http://localhost:8083/video/
+
+###
+POST http://localhost:8083/video/
+Content-Type: application/json
+
+{
+    "title":"Aigiri Nandhini",
+    "duration":"15:27",
+    "uploadedBy":"Vishal",
+    "views":"1k",
+    "dateOfUpload":"14-02-2023",
+    "playlistId":2
+}
+
+###
+DELETE http://localhost:8083/video/
+
+###
+PUT http://localhost:8083/video/
+Content-Type: application/json
+
+{
+    "videoId":1,
+    "title":"Java SpringBoot",
+    "duration":"25:27",
+    "uploadedBy":"Vishal",
+    "views":"1k",
+    "dateOfUpload":"14-02-2023",
+    "playlistId":1
+}
+
+###
+GET http://localhost:8083/video/1
+
+###
+GET http://localhost:8083/video/byPlaylist/2

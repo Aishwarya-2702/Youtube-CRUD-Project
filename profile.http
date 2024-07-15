@@ -1,0 +1,15 @@
+GET http://localhost:8081/profile/
+
+###
+POST http://localhost:8081/profile/
+Content-Type: application/json
+
+{
+    "email":"aishugeetha27@gmail.com",
+    "fullName":"Aishwarya.S",
+    "dob":"27-02-2005",
+    "contact":"8148794224"
+}
+
+###
+GET http://localhost:8081/profile/1

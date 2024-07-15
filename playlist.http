@@ -1,0 +1,47 @@
+
+
+#####  profile displays the no of list of playlist
+GET http://localhost:8082/playlist/
+
+###
+POST http://localhost:8082/playlist/
+Content-Type: application/json
+
+{
+    "title":"Watch later",
+    "profileId":1
+}
+
+###
+DELETE http://localhost:8082/playlist/
+
+###
+PUT http://localhost:8082/playlist/
+Content-Type: application/json
+
+{
+    "playlistId":1,
+    "title":"Watch Later",
+    "profileId":2
+}
+
+###
+GET http://localhost:8082/playlist/2
+
+###
+GET http://localhost:8082/playlist/byProfile/1
+
+######################################################################################################################
+GET http://localhost:8082/getplaylist/
+
+####
+POST http://localhost:8082/getplaylist/
+Content-Type: application/json
+
+{
+    "title":"Watch later",
+    "profileId":1
+}
+
+###
+GET http://localhost:8082/getplaylist/2
